@@ -1,0 +1,11 @@
+body {
+    background: paleturquoise
+}
+
+#editItem-form {
+    display: none;
+}
+
+.lead {
+    font-size: 1.5rem;
+}
