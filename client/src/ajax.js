@@ -11,7 +11,7 @@ $(document).ready(function () {
         todos.forEach(function (todo) {
             $('#todo-list').append(
                 `
- 			<li class="list-group-item">
+ 			<li class="list-group-item d-flex align-items-center">
  				<form action="/todos/${todo._id}" method="POST" id="editItem-form">
  					<div class="form-group">
  						<label for="${todo._id}">Item Text</label>
@@ -22,10 +22,10 @@ $(document).ready(function () {
  				<span class="flex-grow-1 lead">
  					${todo.text}
  				</span>
- 				<div class="gap-2 d-flex justifiy-content-end" id="btnGroup">
- 					<button id="editItem-button" class="btn btn-sm btn-warning">Edit</button>
+ 				<div class="d-inline-flex gap-2 justify-content-end" id="btnGroup">
+ 					<button id="editItem-button" class="btn btn-md btn-warning">Edit</button>
  					<form style="display: inline" method="POST" action="/todos/${todo._id}" id="delItem-form">
- 						<button type="submit" class="btn btn-sm btn-danger">Delete</button>
+ 						<button type="submit" class="btn btn-md btn-danger">Delete</button>
  					</form>
  				</div>
  				<div class="clearfix"></div>
@@ -50,7 +50,7 @@ $(document).ready(function () {
                 success: function (data) {
                     $('#todo-list').append(           // APPENDING THE NEW LIST ITEM TO THE UL=> TODO LIST
                         `
-                     <li class="list-group-item">
+                     <li class="list-group-item d-flex align-items-center">
                             <!-- EDIT FORM -->
                             <form action="/todos/${data._id}" method="POST" id="editItem-form">
                                 <div class="${data._id}">
@@ -63,7 +63,7 @@ $(document).ready(function () {
                             <span class="flex-grow-1 lead">
                                 ${data.text}
                             </span>
-                            <div class="gap-2 d-flex justifiy-content-end" id="btnGroup">
+                            <div class="gap-2 d-inline-flex justifiy-content-end" id="btnGroup">
 
                                 <button id="editItem-button" class="btn btn-md btn-warning">Edit</button>
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
             data.forEach(function (todo) {
                 $('#todo-list').append(
                     `
-                <li class="list-group-item">
+                <li class="list-group-item d-flex align-items-center">
                             <!-- EDIT FORM -->
                             <form action="/todos/${todo._id}" method="POST" id="editItem-form">
                                 <div class="${todo._id}">
