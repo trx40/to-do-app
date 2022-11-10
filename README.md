@@ -1,5 +1,3 @@
-# to-do-app
-Microservices approach on the todo app
 # To do app
 
 ## Project to learn AJAX with jQuery and CORS
