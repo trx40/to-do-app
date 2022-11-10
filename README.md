@@ -1,21 +1,21 @@
-# To do app
+## To do app
 
-## Project to learn AJAX with jQuery and CORS
+### Project to learn AJAX with jQuery and CORS
 
-### Instructions
+#### Installation instructions
 
 Clone the project onto your machine
 
 We are running a client and a server
 
-#### Server
+##### Server
 
 - `cd` into `to-do-app/server` and run `npm install` (just to be sure you have all of the node_modules you need)
 - Start your mongo daemon `mongod` (`mongosh`) in a separate terminal tab
 - Install nodemon globally (if you don't already have it installed) with `npm i -g nodemon`
 - Run your server in its own terminal tab with `nodemon` or `node app`
 
-#### Client
+##### Client
 
 - Navigate to `to-do-app/client` in a separate terminal tab and run `npm install`
 - Run an initial `gulp default` to be sure your transpiled JS file is up to date
